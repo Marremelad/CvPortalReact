@@ -1,20 +1,25 @@
-import { NavLink, Link } from "react-router-dom"
-
+import {NavLink, Link} from "react-router-dom"
+import {useState} from "react";
 export default function Navbar() {
+    const [openSidebar, setOpenSidebar] = useState(false)
+
     return(
         <>
-            <Link to={"#sidebar"}>
-                <article id="hamburger-menu" className="hamburger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </article>
-            </Link>
+            <article
+                className={"hamburger-menu"}
+                onClick={() => setOpenSidebar(!openSidebar)}
+            >
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
 
-            <nav id="sidebar" className="sidebar">
-                <Link to={"#"} className={"close-sidebar-internal"}>
+            <nav id="sidebar" className={`sidebar ${openSidebar ? "open-sidebar" : "closed-sidebar"}`}>
+                <article className={"close-sidebar-internal"}
+                         onClick={() => setOpenSidebar(!openSidebar)}
+                >
                     &times;
-                </Link>
+                </article>
 
                 <ul>
                     <li>
@@ -39,7 +44,9 @@ export default function Navbar() {
                 </ul>
             </nav>
 
-            <Link to={"#"} className={"close-sidebar"}></Link>
+            {openSidebar && (
+                <article className={"closed-sidebar"}></article>
+            )}
         </>
     )
 }
