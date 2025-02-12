@@ -189,16 +189,19 @@ a {
     bottom: 0;
     right: 0;
     width: 200px;
-    visibility: hidden;
-    opacity: 0;
     z-index: 1;
     transition: opacity 0.5s, visibility 0.5s;
 }
 
-.sidebar:target {
+.open-sidebar {
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
+}
+
+.closed-sidebar {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .close-sidebar {
