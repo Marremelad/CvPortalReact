@@ -3,52 +3,43 @@ import { NavLink, Link } from "react-router-dom"
 export default function Navbar() {
     return(
         <>
-            <a href="#sidebar">
+            <Link to={"#sidebar"}>
                 <article id="hamburger-menu" className="hamburger-menu">
                     <div></div>
                     <div></div>
                     <div></div>
                 </article>
-            </a>
+            </Link>
 
             <nav id="sidebar" className="sidebar">
-                <a href="#" className="close-sidebar-internal">
+                <Link to={"#"} className={"close-sidebar-internal"}>
                     &times;
-                </a>
+                </Link>
 
                 <ul>
                     <li>
-                        <a className="active" href="index.html">
-                            Home
-                        </a>
+                        <NavLink to={"/"}>Home</NavLink>
                     </li>
 
                     <li>
-                        <a href="html/about.html">
-                            About Me
-                        </a>
+                        <NavLink to={"/about"}>About Me</NavLink>
                     </li>
 
                     <li>
-                        <a href="html/projects.html">
-                            Projects
-                        </a>
+                        <NavLink to={"/projects"}>Projects</NavLink>
                     </li>
 
                     <li>
-                        <a href="html/resume.html">
-                            Resumé
-                        </a>
+                        <NavLink to={"/resume"}>Browse Resumé</NavLink>
                     </li>
 
                     <li>
-                        <a href="html/contact.html">
-                            Contact
-                        </a>
+                        <NavLink to={"/contact"}>Contact Me</NavLink>
                     </li>
                 </ul>
             </nav>
-            <a href="#" className="close-sidebar"></a>
+
+            <Link to={"#"} className={"close-sidebar"}></Link>
         </>
     )
 }
