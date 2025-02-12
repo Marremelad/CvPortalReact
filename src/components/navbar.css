@@ -1,0 +1,106 @@
+﻿/*---------- Hamburger Menu ----------*/
+
+.hamburger-menu {
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.hamburger-menu div{
+    background-color: #efefef;
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+}
+
+.hamburger-menu:hover {
+    opacity: 0.5;
+}
+
+
+/*---------- Sidebar  ----------*/
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    background-color: #1b191a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    z-index: 1;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.open-sidebar {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.closed-sidebar {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.shade {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: default;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.open-shade {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.closed-shade {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close-sidebar-internal {
+    color: #efefef;
+    position: absolute;
+    cursor: pointer;
+    left: 15px;
+    font-size: 2em;
+    transition: color 0.5s;
+}
+
+.close-sidebar-internal:hover {
+    color: #a62b2b;
+}
+
+.sidebar ul {
+    color: #efefef;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.sidebar li {
+    margin-top: 50px;
+    transition: opacity 0.3s;
+}
+
+.sidebar li:hover {
+    opacity: 0.3;
+}
+
+.sidebar a:target {
+    color: green;
+}
+
+.active {
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 0 0.3125rem;
+}

@@ -1,5 +1,7 @@
 import {NavLink, Link} from "react-router-dom"
 import {useState} from "react";
+import "./navbar.css"
+
 export default function Navbar() {
     const [openSidebar, setOpenSidebar] = useState(false)
 
@@ -44,9 +46,7 @@ export default function Navbar() {
                 </ul>
             </nav>
 
-            {openSidebar && (
-                <article className={"closed-sidebar"}></article>
-            )}
+            <article className={`shade ${openSidebar ? "open-shade" : "closed-shade"}`}></article>
         </>
     )
 }
