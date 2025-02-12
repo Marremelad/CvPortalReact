@@ -1,7 +1,11 @@
+import Navbar from "../components/Navbar.jsx"
+
 export default function Home() {
     return (
         <>
-            <header></header>
+            <header>
+                <Navbar />
+            </header>
 
             <main>
                 <article id="elite-popup" className="elite-popup">
