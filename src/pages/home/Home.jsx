@@ -1,6 +1,10 @@
+import {useState} from "react";
 import Navbar from "../../components/Navbar.jsx"
+import "./home.css"
 
 export default function Home() {
+    const [removeTechStackButton, setRemoveTechStackButton] = useState(false)
+
     return (
         <>
             <header>
@@ -24,13 +28,16 @@ export default function Home() {
                     <h1 className="title-text">Software Development student based in Stockholm, Sweden</h1>
                 </div>
 
-                <div className="tech-stack-button-container">
-                    <div id="tech-stack-button" className="tech-stack-button">
+                <div
+                    className="tech-stack-button-container"
+                    onClick={() => setRemoveTechStackButton(!removeTechStackButton)}
+                >
+                    <div className={`tech-stack-button ${removeTechStackButton ? "remove-tech-stack-button" : ""}`}>
                         Tech Stack
                     </div>
                 </div>
 
-                <section id="tech-stack" className="tech-stack">
+                <section id="tech-stack" className={`tech-stack ${removeTechStackButton ? "open-tech-stack" : ""}`}>
                     <article>
                         <a href="#dot-net-popup">
                             <p className="dot-net-icon">.NET</p>
