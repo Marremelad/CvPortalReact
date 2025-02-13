@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Navbar from "../../components/Navbar.jsx"
+import Navbar from "../../components/navbar/Navbar.jsx"
 import "./home.css"
 
 export default function Home() {
