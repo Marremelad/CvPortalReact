@@ -5,19 +5,29 @@ import About from "./pages/About.jsx"
 import Projects from "./pages/Projects.jsx"
 import Resume from "./pages/Resume.jsx"
 import Contact from "./pages/Contact.jsx"
+import Navbar from "./components/navbar/Navbar.jsx";
+import ElitePopup from "./components/elitePopup/ElitePopup.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 function App() {
 
   return (
     <>
         <BrowserRouter>
-            <Routes>
-                <Route path={"/"} element={<Home />}/>
-                <Route path={"/about"} element={<About />}/>
-                <Route path={"/projects"} element={<Projects />}/>
-                <Route path={"/resume"} element={<Resume />}/>
-                <Route path={"/contact"} element={<Contact />}/>
-            </Routes>
+            <header>
+                <Navbar />
+            </header>
+            <main>
+                <ElitePopup />
+                <Routes>
+                    <Route path={"/"} element={<Home />}/>
+                    <Route path={"/about"} element={<About />}/>
+                    <Route path={"/projects"} element={<Projects />}/>
+                    <Route path={"/resume"} element={<Resume />}/>
+                    <Route path={"/contact"} element={<Contact />}/>
+                </Routes>
+            </main>
+            <Footer />
         </BrowserRouter>
     </>
   )
