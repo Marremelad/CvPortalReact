@@ -1,9 +1,7 @@
-﻿import {useState} from "react";
-import "./footer.css"
+﻿import "./footer.css"
 export default function Footer() {
     const body = document.querySelector("body");
     const audio = new Audio("https://github.com/Marremelad/AssetsAndImages/raw/main/DIF-Sound.mp3");
-    const [theBestTeam, setTheBeastTeam] = useState(false)
 
     const theBestTeamInTheWorld = async () => {
         body.classList.toggle("the-best-team-in-the-world");
