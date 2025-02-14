@@ -2,24 +2,23 @@
 import "./footer.css"
 export default function Footer() {
     const body = document.querySelector("body");
+    const audio = new Audio("https://github.com/Marremelad/AssetsAndImages/raw/main/DIF-Sound.mp3");
     const [theBestTeam, setTheBeastTeam] = useState(false)
 
-    const toggleClass = (theBestTeam) => {
-        if (theBestTeam) {
-            body.classList.add("the-best-team-in-the-world")
-        }
-        else {
-            body.classList.remove("the-best-team-in-the-world")
+    const theBestTeamInTheWorld = async () => {
+        body.classList.toggle("the-best-team-in-the-world");
+        if (audio.paused) {
+            await audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0; // Reset to start
         }
     }
 
     return (
         <>
             <footer>
-                <div className="copy-right-symbol" onClick={() => {
-                    setTheBeastTeam(theBestTeam => !theBestTeam);
-                    toggleClass(theBestTeam)
-                }}>
+                <div className="copy-right-symbol" onClick={theBestTeamInTheWorld}>
                     <p>C</p>
                 </div>
 
