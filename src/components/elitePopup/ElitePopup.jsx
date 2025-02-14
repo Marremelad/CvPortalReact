@@ -1,9 +1,14 @@
 ﻿import "./elitePopup.css"
 import { useState, useEffect } from "react";
+import Shade from "../shade/Shade.jsx";
 
 export default function ElitePopup() {
     const [userInput, setUserInput] = useState("");
     const [isElite, setIsElite] = useState(false);
+
+    const toggleShade = () => {
+        setIsElite(isElite => !isElite)
+    }
 
     useEffect(() => {
         const detect1337 = (event) => {
@@ -29,12 +34,15 @@ export default function ElitePopup() {
     }, []); // ✅ Runs only once
 
     return (
-        <article className={`elite-popup ${isElite ? "open-elite-popup" : ""}`}>
-            <div className="close-elite-popup" onClick={() => setIsElite(false)}>
-                &times;
-            </div>
-            <h2>WOW!</h2>
-            <p>You entered 1337! You are truly elite.</p>
-        </article>
+        <>
+            <article className={`elite-popup ${isElite ? "open-elite-popup" : ""}`}>
+                <div className="close-elite-popup" onClick={() => setIsElite(false)}>
+                    &times;
+                </div>
+                <h2>WOW!</h2>
+                <p>You entered 1337! You are truly elite.</p>
+            </article>
+            <Shade openShade={isElite} onClick={toggleShade}/>
+        </>
     );
 }
