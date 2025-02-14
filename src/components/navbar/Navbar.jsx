@@ -1,24 +1,29 @@
 import {NavLink, Link} from "react-router-dom"
 import {useState} from "react";
+import Shade from "../shade/Shade.jsx";
 import "./navbar.css"
 
 export default function Navbar() {
-    const [openSidebar, setOpenSidebar] = useState(false)
+    const [open, setOpen] = useState(false)
+
+    const toggleShade = () => {
+        setOpen(open => !open);
+    }
 
     return(
         <>
             <article
                 className={"hamburger-menu"}
-                onClick={() => setOpenSidebar(!openSidebar)}
+                onClick={() => setOpen(!open)}
             >
                 <div></div>
                 <div></div>
                 <div></div>
             </article>
 
-            <nav id="sidebar" className={`sidebar ${openSidebar ? "open-sidebar" : "closed-sidebar"}`}>
+            <nav id="sidebar" className={`sidebar ${open ? "open-sidebar" : "closed-sidebar"}`}>
                 <article className={"close-sidebar-internal"}
-                         onClick={() => setOpenSidebar(!openSidebar)}
+                         onClick={() => setOpen(!open)}
                 >
                     &times;
                 </article>
@@ -46,7 +51,7 @@ export default function Navbar() {
                 </ul>
             </nav>
 
-            <article className={`shade ${openSidebar ? "open-shade" : "closed-shade"}`}></article>
+            <Shade openShade={open} onClick={toggleShade}/>
         </>
     )
 }
