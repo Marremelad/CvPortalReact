@@ -37,7 +37,7 @@ export default function Navbar() {
                     </li>
 
                     <li>
-                        <NavLink to={"/resume"}>Browse Resumé</NavLink>
+                        <NavLink to={"/resume"}>Resumé</NavLink>
                     </li>
 
                     <li>
