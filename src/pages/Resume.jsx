@@ -1,9 +1,9 @@
-import Navbar from "../components/navbar/Navbar.jsx"
+import Header from "../components/header/Header.jsx"
 
 export default function Resume() {
     return (
         <>
-            <Navbar />
+            <Header />
             <h1>Resumé</h1>
         </>
     )

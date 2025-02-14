@@ -5,18 +5,16 @@ import About from "./pages/About.jsx"
 import Projects from "./pages/Projects.jsx"
 import Resume from "./pages/Resume.jsx"
 import Contact from "./pages/Contact.jsx"
-import Navbar from "./components/navbar/Navbar.jsx";
+import Header from "./components/header/Header.jsx";
 import ElitePopup from "./components/elitePopup/ElitePopup.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
-function App() {
+export default function App() {
 
   return (
     <>
         <BrowserRouter>
-            <header>
-                <Navbar />
-            </header>
+            <Header />
             <main>
                 <ElitePopup />
                 <Routes>
@@ -32,5 +30,3 @@ function App() {
     </>
   )
 }
-
-export default App

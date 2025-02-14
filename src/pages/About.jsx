@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar/Navbar.jsx"
+import Header from "../components/header/Header.jsx"
 export default function About() {
     return (
         <>
