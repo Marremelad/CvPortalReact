@@ -1,7 +1,7 @@
 import {NavLink, Link} from "react-router-dom"
 import {useState} from "react";
 import Shade from "../shade/Shade.jsx";
-import "./navbar.css"
+import "./header.css"
 
 export default function Header() {
     const [open, setOpen] = useState(false)
