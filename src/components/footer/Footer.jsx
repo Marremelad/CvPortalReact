@@ -9,7 +9,7 @@ export default function Footer() {
             await audio.play();
         } else {
             audio.pause();
-            audio.currentTime = 0; // Reset to start
+            audio.currentTime = 0;
         }
     }
 
