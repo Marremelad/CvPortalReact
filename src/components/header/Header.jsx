@@ -6,16 +6,12 @@ import "./header.css"
 export default function Header() {
     const [open, setOpen] = useState(false)
 
-    const toggleShade = () => {
-        setOpen(open => !open);
-    }
-
     return(
         <>
             <header>
                 <article
                     className={"hamburger-menu"}
-                    onClick={() => setOpen(!open)}
+                    onClick={() => setOpen(true)}
                 >
                     <div></div>
                     <div></div>
@@ -24,7 +20,7 @@ export default function Header() {
 
                 <nav id="sidebar" className={`sidebar ${open ? "open-sidebar" : "closed-sidebar"}`}>
                     <article className={"close-sidebar-internal"}
-                             onClick={() => setOpen(!open)}
+                             onClick={() => setOpen(false)}
                     >
                         &times;
                     </article>
@@ -52,7 +48,7 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                <Shade openShade={open} onClick={toggleShade}/>
+                <Shade openShade={open} onClick={() => setOpen(false)}/>
             </header>
         </>
     )
