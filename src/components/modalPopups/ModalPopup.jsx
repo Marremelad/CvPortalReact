@@ -9,12 +9,9 @@ export default function ModalPopup({data, open, setOpen}) {
         <>
             <article className={`popup ${open ? "open-popup" : "close-popup"}`} >
                 <div onClick={() => setOpen(false)} className="close" >&times;</div>
-                <h2>.NET</h2>
-                <p>.NET is a Microsoft framework for building applications using C#, VB.NET, and F#. It provides
-                   a large
-                   library for web, desktop, and mobile development, simplifying tasks like database access and
-                   UI
-                   design.
+                <h2>{data.name}</h2>
+                <p>
+                    {data.description}
                 </p>
             </article>
             <Shade openShade={open} onClick={() => setOpen(false)}/>
