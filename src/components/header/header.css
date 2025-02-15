@@ -95,10 +95,6 @@
     opacity: 0.3;
 }
 
-.sidebar a:target {
-    color: green;
-}
-
 .active {
     border: 1px solid #efefef;
     border-radius: 2px;
