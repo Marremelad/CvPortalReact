@@ -21,5 +21,11 @@
     "html" : "<i class=\"fa-brands fa-js javascript-icon icon\"></i>",
     "name" : "Javascript",
     "description" : "JavaScript is a versatile programming language that enables dynamic behavior on websites. It allows for interactive elements, real-time updates, and user-driven actions, making web pages more lively and flexible."
+  },
+
+  {
+    "html" : "<i class=\"fa-brands fa-react icon\" style=\"color: #61dbfb\"></i>",
+    "name" : "React",
+    "description" : "React is a JavaScript library for building fast and interactive user interfaces, primarily for web applications. It uses a component-based architecture and a virtual DOM to efficiently update and render UI elements."
   }
 ]
