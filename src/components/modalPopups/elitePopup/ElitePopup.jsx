@@ -5,10 +5,6 @@ export default function ElitePopup() {
     const [userInput, setUserInput] = useState("");
     const [isElite, setIsElite] = useState(false);
 
-    const toggleShade = () => {
-        setIsElite(isElite => !isElite)
-    }
-
     useEffect(() => {
         const detect1337 = (event) => {
             setUserInput((prevInput) => {
@@ -29,8 +25,8 @@ export default function ElitePopup() {
         };
 
         document.addEventListener("keydown", detect1337);
-        return () => document.removeEventListener("keydown", detect1337); // ✅ Cleanup
-    }, []); // ✅ Runs only once
+        return () => document.removeEventListener("keydown", detect1337);
+    }, []);
 
     return (
         <>
@@ -41,7 +37,7 @@ export default function ElitePopup() {
                 <h2>WOW!</h2>
                 <p>You entered 1337! You are truly elite.</p>
             </article>
-            <Shade openShade={isElite} onClick={toggleShade}/>
+            <Shade openShade={isElite} onClick={() => setIsElite(false)}/>
         </>
     );
 }
