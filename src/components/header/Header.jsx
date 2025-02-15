@@ -1,7 +1,7 @@
+import "./header.css"
 import {NavLink, Link} from "react-router-dom"
 import {useState} from "react";
 import Shade from "../shade/Shade.jsx";
-import "./header.css"
 
 export default function Header() {
     const [open, setOpen] = useState(false)
@@ -18,8 +18,8 @@ export default function Header() {
                     <div></div>
                 </article>
 
-                <nav id="sidebar" className={`sidebar ${open ? "open-sidebar" : "close-sidebar"}`}>
-                    <article className={"close-sidebar-internal"}
+                <nav id="sidebar" className={`sidebar ${open ? "open-sidebar" : "closed-sidebar"}`}>
+                    <article className={"close-sidebar"}
                              onClick={() => setOpen(false)}
                     >
                         &times;

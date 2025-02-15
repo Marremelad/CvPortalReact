@@ -1,4 +1,5 @@
-﻿export default function Shade({ openShade, onClick }) {
+﻿import "./shade.css"
+export default function Shade({ openShade, onClick }) {
     return (
         <>
             <article

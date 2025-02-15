@@ -1,8 +1,7 @@
-import {useState} from "react";
-import data from "../../assets/json/techStack.json";
-import ModalPopup from "../../components/modalPopups/ModalPopup.jsx";
 import "./home.css";
+import {useState} from "react";
 import parse from "html-react-parser";
+import data from "../../assets/json/techStack.json";
 
 export default function Home() {
     const [removeTechStackButton, setRemoveTechStackButton] = useState(false)

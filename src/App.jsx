@@ -1,6 +1,5 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom"
 import "./style.css"
-// import "./components/modalPopups/modalPopup.css";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/home/Home.jsx"
 import About from "./pages/About.jsx"
 import Projects from "./pages/Projects.jsx"

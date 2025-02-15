@@ -20,7 +20,7 @@
     transition-delay: 0s;
 }
 
-.close-popup {
+.closed-popup {
     visibility: hidden;
     opacity: 0;
 }
