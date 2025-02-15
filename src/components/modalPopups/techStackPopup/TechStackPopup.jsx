@@ -3,6 +3,7 @@ export default function TechStackPopup() {
     // console.log(data[0].name)
 
     return (
+
         <>
             <article onClick={() => console.log(data[0].name)}>
                 <p className="dot-net-icon">.NET</p>

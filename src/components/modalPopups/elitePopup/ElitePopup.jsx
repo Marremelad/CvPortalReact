@@ -1,7 +1,6 @@
 ﻿import "./elitePopup.css"
 import { useState, useEffect } from "react";
-import Shade from "../shade/Shade.jsx";
-
+import Shade from "../../shade/Shade.jsx";
 export default function ElitePopup() {
     const [userInput, setUserInput] = useState("");
     const [isElite, setIsElite] = useState(false);

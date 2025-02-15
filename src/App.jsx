@@ -6,7 +6,7 @@ import Projects from "./pages/Projects.jsx"
 import Resume from "./pages/Resume.jsx"
 import Contact from "./pages/Contact.jsx"
 import Header from "./components/header/Header.jsx";
-import ElitePopup from "./components/elitePopup/ElitePopup.jsx";
+import ElitePopup from "./components/modalPopups/elitePopup/ElitePopup.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 export default function App() {

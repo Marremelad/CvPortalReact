@@ -1,6 +1,4 @@
 import {useState} from "react";
-import ElitePopup from "../../components/elitePopup/ElitePopup.jsx"
-import Header from "../../components/header/Header.jsx"
 import "./home.css"
 
 export default function Home() {
