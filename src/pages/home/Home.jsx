@@ -2,9 +2,11 @@ import {useState} from "react";
 import data from "../../assets/json/techStack.json";
 import ModalPopup from "../../components/modalPopups/ModalPopup.jsx";
 import "./home.css";
+import parse from "html-react-parser";
 
 export default function Home() {
     const [removeTechStackButton, setRemoveTechStackButton] = useState(false)
+    const [open, setOpen] = useState(false);
 
     return (
         <>
@@ -26,7 +28,11 @@ export default function Home() {
             </div>
 
             <section id="tech-stack" className={`tech-stack ${removeTechStackButton ? "open-tech-stack" : ""}`}>
-                <ModalPopup data={data}/>
+                <article onClick={() => setOpen(true)}>
+                    {parse(data[0].html)}
+                </article>
+
+                <ModalPopup data={data} open={open} setOpen={setOpen}/>
             </section>
         </>
     )

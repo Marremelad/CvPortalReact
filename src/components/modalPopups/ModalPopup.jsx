@@ -1,17 +1,12 @@
 ﻿import parse from "html-react-parser"
-import {useState} from "react";
+import {use, useState} from "react";
 import "./modalPopup.css"
 import Shade from "../shade/Shade.jsx";
 
-export default function ModalPopup({data}) {
-    const [open, setOpen] = useState(false);
+export default function ModalPopup({data, open, setOpen}) {
 
     return (
         <>
-            <article onClick={() => setOpen(true)}>
-                {parse(data[0].html)}
-            </article>
-
             <article className={`popup ${open ? "open-popup" : "close-popup"}`} >
                 <div onClick={() => setOpen(false)} className="close" >&times;</div>
                 <h2>.NET</h2>
