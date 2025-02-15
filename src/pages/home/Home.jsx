@@ -6,7 +6,6 @@ import parse from "html-react-parser";
 
 export default function Home() {
     const [removeTechStackButton, setRemoveTechStackButton] = useState(false)
-    const [open, setOpen] = useState(false);
 
     return (
         <>
@@ -28,11 +27,19 @@ export default function Home() {
             </div>
 
             <section id="tech-stack" className={`tech-stack ${removeTechStackButton ? "open-tech-stack" : ""}`}>
-                <article onClick={() => setOpen(true)}>
-                    {parse(data[0].html)}
-                </article>
+                {data.map((tech, index) => {
+                    const [open, setOpen] = useState(false);
 
-                <ModalPopup data={data} open={open} setOpen={setOpen}/>
+                    return (
+                        <div key={index}>
+                            <article onClick={() => setOpen(true)}>
+                                {parse(tech.html)}
+                            </article>
+
+                            <ModalPopup data={tech} open={open} setOpen={setOpen} />
+                        </div>
+                    );
+                })}
             </section>
         </>
     )
