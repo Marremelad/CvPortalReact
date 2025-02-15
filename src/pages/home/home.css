@@ -43,21 +43,6 @@
     visibility: visible;
 }
 
-.dot-net-icon {
-    height: 2.625rem;
-    width: 2.625rem;
-    color: #b0afaf;
-    background-color: #442a9d;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s;
-}
-
 .icon {
     cursor: pointer;
     transition: opacity 0.3s;
@@ -65,18 +50,6 @@
 
 .icon:hover {
     opacity: 0.3;
-}
-
-.html5-icon {
-    color: #a83d22;
-}
-
-.css3-icon {
-    color: #267099;
-}
-
-.javascript-icon {
-    color: #b4a319;
 }
 
 .tech-stack i {
