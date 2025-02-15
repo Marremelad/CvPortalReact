@@ -38,7 +38,7 @@
     transition-delay: 0s;
 }
 
-.closed-sidebar {
+.close-sidebar {
     visibility: hidden;
     opacity: 0;
 }

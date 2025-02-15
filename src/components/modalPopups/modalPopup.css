@@ -23,7 +23,6 @@
 .close-popup {
     visibility: hidden;
     opacity: 0;
-    transition-delay: 0s;
 }
 
 .close {

@@ -18,7 +18,7 @@ export default function Header() {
                     <div></div>
                 </article>
 
-                <nav id="sidebar" className={`sidebar ${open ? "open-sidebar" : "closed-sidebar"}`}>
+                <nav id="sidebar" className={`sidebar ${open ? "open-sidebar" : "close-sidebar"}`}>
                     <article className={"close-sidebar-internal"}
                              onClick={() => setOpen(false)}
                     >
