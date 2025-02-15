@@ -1,11 +1,11 @@
 ﻿import "./modalPopup.css"
 import Shade from "../shade/Shade.jsx";
 
-export default function ModalPopup({data, open, setOpen}) {
+export default function ModalPopup({data, open, setOpen, customClass = ""}) {
 
     return (
         <>
-            <article className={`popup ${open ? "open-popup" : "closed-popup"}`} >
+            <article className={`popup ${customClass} ${open ? "open-popup" : "closed-popup"}`} >
                 <div onClick={() => setOpen(false)} className="close" >&times;</div>
                 <h2>{data.name}</h2>
                 <p>
