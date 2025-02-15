@@ -38,36 +38,12 @@
     transition-delay: 0s;
 }
 
+.closed-sidebar {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .close-sidebar {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.shade {
-    background-color: rgba(0, 0, 0, 0.7);
-    cursor: default;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0.5s;
-}
-
-.open-shade {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s;
-}
-
-.closed-shade {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.close-sidebar-internal {
     color: #efefef;
     position: absolute;
     cursor: pointer;
@@ -76,7 +52,7 @@
     transition: color 0.5s;
 }
 
-.close-sidebar-internal:hover {
+.close-sidebar:hover {
     color: #a62b2b;
 }
 
