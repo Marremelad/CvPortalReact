@@ -1,4 +1,4 @@
-import Header from "../components/header/Header.jsx"
+import Header from "../../components/header/Header.jsx"
 
 export default function Projects() {
     return (
