@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <>
             <figure>
-                <img className="coat-of-arms" src="images/MauricioCoatOfArmsTextTop.png" alt=""/>
+                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="Coat of arms"/>
             </figure>
 
             <div className="title-container">
