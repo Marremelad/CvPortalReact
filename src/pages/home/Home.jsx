@@ -26,7 +26,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <section id="tech-stack" className={`tech-stack ${removeTechStackButton ? "open-tech-stack" : ""}`}>
+            <section className={`tech-stack ${removeTechStackButton ? "open-tech-stack" : ""}`}>
                 {data.map((tech, index) => {
                     const [open, setOpen] = useState(false);
 
