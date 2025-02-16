@@ -1,4 +1,5 @@
-﻿import "./elitePopup.css"
+﻿import "../modalPopup.css"
+import "./elitePopup.css"
 import { useState, useEffect } from "react";
 import Shade from "../../shade/Shade.jsx";
 export default function ElitePopup() {
@@ -30,8 +31,8 @@ export default function ElitePopup() {
 
     return (
         <>
-            <article className={`elite-popup ${isElite ? "open-elite-popup" : ""}`}>
-                <div className="close-elite-popup" onClick={() => setIsElite(false)}>
+            <article className={`popup elite-popup ${isElite ? "open-popup" : "closed-popup"}`}>
+                <div className="close" onClick={() => setIsElite(false)}>
                     &times;
                 </div>
                 <h2>WOW!</h2>
