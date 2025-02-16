@@ -21,8 +21,7 @@ export default function Footer() {
                 </div>
 
                 <p className="copy-right-text">
-                    Created by
-                    <a className="footer-linkedin-link" href="https://www.linkedin.com/in/mauricio-corte-343a6a22a/">
+                    Created by <a className="footer-linkedin-link" href="https://www.linkedin.com/in/mauricio-corte-343a6a22a/">
                         Mauricio Corte
                     </a>
                 </p>
