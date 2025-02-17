@@ -47,12 +47,15 @@ export default function Project() {
                 <article className="project" key={project.name}>
                     <div className="project-info-container">
                         <h2 className="project-name">{project.name}</h2>
+
+                        <p className="project-language">{project.language ? project.language : "No registered language"}</p>
+
                         <section className="project-button-container">
                             <div className="learn-more-button" onClick={() => toggleOpen(index)}>
                                 learn more
                             </div>
 
-                            <a href="https://github.com/Marremelad/SalamanderBank">
+                            <a href={`${project.clone_url}`}>
                                 <i className="fa-brands fa-github projects-github-icon"></i>
                             </a>
 

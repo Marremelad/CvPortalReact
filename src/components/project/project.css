@@ -12,17 +12,6 @@
     margin-bottom: 10rem;
 }
 
-.project-image-container {
-    display: flex;
-    align-items: center;
-    border: 2rem solid #efefef;
-}
-
-.project-image {
-    width: 50em;
-    object-fit: contain;
-}
-
 .project-info-container {
     width: 30rem;
 }
@@ -31,7 +20,7 @@
     font-size: 3rem;
 }
 
-.project-description {
+.project-language {
     font-family: "Crimson Pro", serif;
     font-size: 1.5rem;
     margin-bottom: 3vh;
