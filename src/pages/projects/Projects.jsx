@@ -1,24 +1,24 @@
-import Header from "../../components/header/Header.jsx"
+import "./projects.css"
+import Project from "../../components/project/Project.jsx";
 
 export default function Projects() {
+
     return (
         <>
             <figure>
-                <img class="coat-of-arms" src="../images/MauricioCoatOfArmsTextTop.png" alt=""/>
+                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="" />
             </figure>
 
-            <div class="title-container">
-                <h1 class="title-text">My<br/>projects</h1>
+            <div className="title-container">
+                <h1 className="title-text">My<br />projects</h1>
             </div>
 
-            <div class="down-arrow">
+            <div className="down-arrow">
                 <p>&#8595;</p>
             </div>
 
-            <section class="projects-container">
-
-
-
+            <section className="projects-container">
+                <Project />
             </section>
         </>
     )

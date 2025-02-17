@@ -1,12 +1,12 @@
 import "./header.css"
-import {NavLink, Link} from "react-router-dom"
-import {useState} from "react";
+import { NavLink, Link } from "react-router-dom"
+import { useState } from "react";
 import Shade from "../shade/Shade.jsx";
 
 export default function Header() {
     const [open, setOpen] = useState(false)
 
-    return(
+    return (
         <>
             <header>
                 <article
@@ -20,14 +20,14 @@ export default function Header() {
 
                 <nav id="sidebar" className={`sidebar ${open ? "open-sidebar" : "closed-sidebar"}`}>
                     <article className={"close-sidebar"}
-                             onClick={() => setOpen(false)}
+                        onClick={() => setOpen(false)}
                     >
                         &times;
                     </article>
 
                     <ul>
                         <li>
-                            <NavLink to={"/"}>Home</NavLink>
+                            <NavLink to={"/"} onClick={() => setOpen(false)}>Home</NavLink>
                         </li>
 
                         <li>
@@ -48,7 +48,7 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                <Shade openShade={open} onClick={() => setOpen(false)}/>
+                <Shade openShade={open} onClick={() => setOpen(false)} />
             </header>
         </>
     )

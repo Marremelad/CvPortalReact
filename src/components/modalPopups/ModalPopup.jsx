@@ -1,7 +1,7 @@
 ﻿import "./modalPopup.css"
 import Shade from "../shade/Shade.jsx";
 
-export default function ModalPopup({data, open, setOpen, customClass = ""}) {
+export default function ModalPopup({ data, open, setOpen, customClass = "" }) {
 
     return (
         <>
@@ -12,7 +12,7 @@ export default function ModalPopup({data, open, setOpen, customClass = ""}) {
                     {data.description}
                 </p>
             </article>
-            <Shade openShade={open} onClick={() => setOpen(false)}/>
+            <Shade openShade={open} onClick={() => setOpen(false)} />
         </>
     )
 }

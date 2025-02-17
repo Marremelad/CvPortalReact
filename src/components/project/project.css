@@ -1,0 +1,93 @@
+﻿.loading-animation {
+    display: block;
+    color: white;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.project-image-container {
+    display: flex;
+    align-items: center;
+    border: 2rem solid #efefef;
+}
+
+.project-image {
+    width: 50em;
+    object-fit: contain;
+}
+
+.project-info-container {
+    width: 30rem;
+}
+
+.project-name {
+    font-size: 3rem;
+}
+
+.project-description {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+}
+
+.project-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.learn-more-button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.5s;
+}
+
+.learn-more-button:hover {
+    opacity: 0.5;
+}
+
+.projects-github-icon {
+    font-size: 3rem;
+    transition: opacity 0.3s;
+}
+
+.projects-github-icon:hover {
+    opacity: 0.3;
+}
+
+@media (max-width: 870px) {
+
+    .projects-container {
+        margin-top: 10rem;
+    }
+
+    .project-image-container {
+        border-width: 1rem;
+    }
+
+    .project-image {
+        width: 20em;
+    }
+
+    .project-info-container {
+        width: 20rem;
+    }
+
+    .project-name {
+        font-size: 2rem;
+    }
+}
