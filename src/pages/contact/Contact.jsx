@@ -1,9 +1,14 @@
 import "./contact.css"
+import { useEffect } from "react"
 
 export default function Contact() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
-            <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt=""/>
+            <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="" />
 
             <div className="title-container">
                 <h1 className="contact-title-text">

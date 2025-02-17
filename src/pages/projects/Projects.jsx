@@ -1,7 +1,11 @@
 import "./projects.css"
+import { useEffect } from "react";
 import Project from "../../components/project/Project.jsx";
 
 export default function Projects() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

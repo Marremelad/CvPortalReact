@@ -1,13 +1,17 @@
 import "./about.css"
-import {useState} from "react";
+import { useState, useEffect } from "react";
 
 export default function About() {
     const [removeElements, setRemoveElements] = useState(false);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <figure>
-                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt=""/>
+                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="" />
             </figure>
 
             <div className="title-container">
@@ -30,7 +34,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src="../../../public/images/MilitaryExercise1.jpg" alt="Mauricio standing on a field holding an AK5."/>
+                    <img src="../../../public/images/MilitaryExercise1.jpg" alt="Mauricio standing on a field holding an AK5." />
                 </figure>
 
                 <article>
@@ -44,7 +48,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src="../../../public/images/HorseRide.jpg" alt="Mauricio riding a horse."/>
+                    <img src="../../../public/images/HorseRide.jpg" alt="Mauricio riding a horse." />
                 </figure>
 
                 <article>
@@ -58,7 +62,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src="../../../public/images/SwedishCoatOfArms.jpg" alt="Swedish coat of arms.       "/>
+                    <img src="../../../public/images/SwedishCoatOfArms.jpg" alt="Swedish coat of arms.       " />
                 </figure>
 
                 <article>
@@ -72,7 +76,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img className="tank-round-image" src="../../../public/images/MilitaryExercise2.jpg" alt="Mauricio holding a tank round."/>
+                    <img className="tank-round-image" src="../../../public/images/MilitaryExercise2.jpg" alt="Mauricio holding a tank round." />
                 </figure>
 
                 <article>

@@ -1,13 +1,16 @@
 import "./home.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import parse from "html-react-parser";
 import data from "../../assets/json/techStack.json";
 import ModalPopup from "../../components/modalPopups/ModalPopup.jsx";
 
 export default function Home() {
     const [removeTechStackButton, setRemoveTechStackButton] = useState(false)
-    // const [open, setOpen] = useState(false);
     const [openStates, setOpenStates] = useState(data.map(() => false))
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const toggleOpen = (index) => {
         setOpenStates(prevStates => {

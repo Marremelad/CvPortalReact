@@ -1,14 +1,19 @@
 import "./resume.css"
+import { useEffect } from "react"
 
 export default function Resume() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <figure>
-                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt=""/>
+                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="" />
             </figure>
 
             <div className="title-container">
-                <h1 className="title-text">Browse<br/>Resumé</h1>
+                <h1 className="title-text">Browse<br />Resumé</h1>
             </div>
 
             <div className="down-arrow">
@@ -17,7 +22,7 @@ export default function Resume() {
 
             <section className="personal-information-container">
                 <figure className="cv-picture-container">
-                    <img className="cv-picture" src="../../../public/images/CvPicture.jpg" alt="Portrait picture"/>
+                    <img className="cv-picture" src="../../../public/images/CvPicture.jpg" alt="Portrait picture" />
                 </figure>
 
                 <article className="personal-information">
@@ -29,7 +34,7 @@ export default function Resume() {
 
             <div className="employment-and-assignments-and-references-container">
                 <section className="employment-and-assignments">
-                    <h2>Employment<br/>and<br/>Assignments</h2>
+                    <h2>Employment<br />and<br />Assignments</h2>
 
                     <div className="cv-information-container">
                         <article>
