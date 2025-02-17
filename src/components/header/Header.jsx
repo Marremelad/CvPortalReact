@@ -31,19 +31,19 @@ export default function Header() {
                         </li>
 
                         <li>
-                            <NavLink to={"/about"}>About Me</NavLink>
+                            <NavLink to={"/about"} onClick={() => setOpen(false)}>About Me</NavLink>
                         </li>
 
                         <li>
-                            <NavLink to={"/projects"}>Projects</NavLink>
+                            <NavLink to={"/projects"} onClick={() => setOpen(false)}>Projects</NavLink>
                         </li>
 
                         <li>
-                            <NavLink to={"/resume"}>Resumé</NavLink>
+                            <NavLink to={"/resume"} onClick={() => setOpen(false)}>Resumé</NavLink>
                         </li>
 
                         <li>
-                            <NavLink to={"/contact"}>Contact Me</NavLink>
+                            <NavLink to={"/contact"} onClick={() => setOpen(false)}>Contact Me</NavLink>
                         </li>
                     </ul>
                 </nav>
