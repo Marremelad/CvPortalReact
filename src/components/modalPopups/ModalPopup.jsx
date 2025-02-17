@@ -6,7 +6,7 @@ export default function ModalPopup({ data, open, setOpen, customClass = "" }) {
     return (
         <>
             <article className={`popup ${customClass} ${open ? "open-popup" : "closed-popup"}`} >
-                <div onClick={() => setOpen(false)} className="close" >&times;</div>
+                <div onClick={setOpen} className="close" >&times;</div>
                 <h2>{data.name}</h2>
                 <p>
                     {data.description}

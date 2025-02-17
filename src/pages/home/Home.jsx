@@ -1,16 +1,26 @@
 import "./home.css";
-import {useState} from "react";
+import { useState } from "react";
 import parse from "html-react-parser";
 import data from "../../assets/json/techStack.json";
 import ModalPopup from "../../components/modalPopups/ModalPopup.jsx";
 
 export default function Home() {
     const [removeTechStackButton, setRemoveTechStackButton] = useState(false)
+    // const [open, setOpen] = useState(false);
+    const [openStates, setOpenStates] = useState(data.map(() => false))
+
+    const toggleOpen = (index) => {
+        setOpenStates(prevStates => {
+            const newStates = [...prevStates]
+            newStates[index] = !newStates[index]
+            return newStates
+        })
+    }
 
     return (
         <>
             <figure>
-                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="Coat of arms"/>
+                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="Coat of arms" />
             </figure>
 
             <div className="title-container">
@@ -28,15 +38,17 @@ export default function Home() {
 
             <section className={`tech-stack ${removeTechStackButton ? "open-tech-stack" : ""}`}>
                 {data.map((tech, index) => {
-                    const [open, setOpen] = useState(false);
-
                     return (
                         <div key={index}>
-                            <article onClick={() => setOpen(true)}>
+                            <article onClick={() => toggleOpen(index)}>
                                 {parse(tech.html)}
                             </article>
 
-                            <ModalPopup data={tech} open={open} setOpen={setOpen} />
+                            <ModalPopup
+                                data={tech}
+                                open={openStates[index]}
+                                setOpen={() => toggleOpen(index)}
+                            />
                         </div>
                     );
                 })}
