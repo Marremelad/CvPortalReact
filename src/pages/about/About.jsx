@@ -9,10 +9,6 @@ export default function About() {
 
     return (
         <>
-            <figure>
-                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="" />
-            </figure>
-
             <div className="title-container">
                 <h1 className="title-text">"Discipline will always beat Motivation"</h1>
             </div>

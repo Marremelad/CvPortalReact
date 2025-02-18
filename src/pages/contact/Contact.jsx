@@ -6,8 +6,6 @@ export default function Contact() {
 
     return (
         <>
-            <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="" />
-
             <div className="title-container">
                 <h1 className="contact-title-text">
                     If you’re interested in collaborating or exchanging ideas, feel free to reach out.

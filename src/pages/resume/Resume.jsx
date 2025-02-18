@@ -6,10 +6,6 @@ export default function Resume() {
 
     return (
         <>
-            <figure>
-                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="" />
-            </figure>
-
             <div className="title-container">
                 <h1 className="title-text">Browse<br />Resumé</h1>
             </div>
