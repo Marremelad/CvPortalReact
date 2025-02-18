@@ -1,5 +1,5 @@
 import "./style.css"
-import image from "src/assets/images/MauricioCoatOfArmsTextTop.png"
+import image from "/src/assets/images/MauricioCoatOfArmsTextTop.png"
 import {HashRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/home/Home.jsx"
 import About from "./pages/about/About.jsx"
