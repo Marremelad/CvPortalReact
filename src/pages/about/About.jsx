@@ -29,7 +29,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src={`/cv-portal-react/public/images/MilitaryExercise1.jpg`} alt="Mauricio standing on a field holding an AK5." />
+                    <img src={`/cv-portal-react/public/images/militaryexercise1.jpg`} alt="Mauricio standing on a field holding an AK5." />
                 </figure>
 
                 <article>
@@ -43,7 +43,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src={`/cv-portal-react/public/images/HorseRide.jpg`} alt="Mauricio riding a horse." />
+                    <img src={`/cv-portal-react/public/images/horseride.jpg`} alt="Mauricio riding a horse." />
                 </figure>
 
                 <article>
@@ -57,7 +57,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src={`/cv-portal-react/public/images/SwedishCoatOfArms.jpg`} alt="Swedish coat of arms.       " />
+                    <img src={`/cv-portal-react/public/images/swedishcoatofarms.jpg`} alt="Swedish coat of arms.       " />
                 </figure>
 
                 <article>
@@ -71,7 +71,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img className="tank-round-image" src={`/cv-portal-react/public/images/MilitaryExercise2.jpg`} alt="Mauricio holding a tank round." />
+                    <img className="tank-round-image" src={`/cv-portal-react/public/images/militaryexercise2.jpg`} alt="Mauricio holding a tank round." />
                 </figure>
 
                 <article>
