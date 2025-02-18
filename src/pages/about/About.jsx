@@ -1,4 +1,8 @@
 import "./about.css"
+import image1 from "../../assets/images/MilitaryExercise1.jpg"
+import image2 from "../../assets/images/HorseRide.jpg"
+import image3 from "../../assets/images/SwedishCoatOfArms.jpg"
+import image4 from "../../assets/images/MilitaryExercise2.jpg"
 import { useState } from "react";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 
@@ -29,7 +33,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src={`/cv-portal-react/public/images/militaryexercise1.jpg`} alt="Mauricio standing on a field holding an AK5." />
+                    <img src={`${image1}`} alt="Mauricio standing on a field holding an AK5." />
                 </figure>
 
                 <article>
@@ -43,7 +47,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src={`/cv-portal-react/public/images/horseride.jpg`} alt="Mauricio riding a horse." />
+                    <img src={`${image2}`} alt="Mauricio riding a horse." />
                 </figure>
 
                 <article>
@@ -57,7 +61,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src={`/cv-portal-react/public/images/swedishcoatofarms.jpg`} alt="Swedish coat of arms.       " />
+                    <img src={`${image3}`} alt="Swedish coat of arms.       " />
                 </figure>
 
                 <article>
@@ -71,7 +75,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img className="tank-round-image" src={`/cv-portal-react/public/images/militaryexercise2.jpg`} alt="Mauricio holding a tank round." />
+                    <img className="tank-round-image" src={`${image4}`} alt="Mauricio holding a tank round." />
                 </figure>
 
                 <article>

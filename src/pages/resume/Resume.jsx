@@ -1,4 +1,5 @@
 import "./resume.css"
+import image from "../../assets/images/CvPicture.jpg"
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 
 export default function Resume() {
@@ -16,7 +17,7 @@ export default function Resume() {
 
             <section className="personal-information-container">
                 <figure className="cv-picture-container">
-                    <img className="cv-picture" src={`/cv-portal-react/images/cvpicture.jpg`} alt="Portrait picture" />
+                    <img className="cv-picture" src={`${image}`} alt="Portrait picture" />
                 </figure>
 
                 <article className="personal-information">

@@ -1,5 +1,5 @@
 import "./style.css"
-import image from "assets/images/"
+import image from "assets/images/MauricioCoatOfArms.png"
 import {HashRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/home/Home.jsx"
 import About from "./pages/about/About.jsx"
@@ -18,7 +18,7 @@ export default function App() {
             <Header />
             <main>
                 <figure>
-                    <img className="coat-of-arms" src={`/cv-portal-react/public/images/MauricioCoatOfArmsTextTop.png`} alt="Coat of arms" />
+                    <img className="coat-of-arms" src={`${image}`} alt="Coat of arms" />
                 </figure>
                 <ElitePopup />
                 <Routes>
