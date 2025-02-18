@@ -21,10 +21,6 @@ export default function Home() {
 
     return (
         <>
-            <figure>
-                <img className="coat-of-arms" src={`${process.env.PUBLIC_URL}/images/MauricioCoatOfArmsTextTop.png`} alt="Coat of arms" />
-            </figure>
-
             <div className="title-container">
                 <h1 className="title-text">Software Development student based in Stockholm, Sweden</h1>
             </div>

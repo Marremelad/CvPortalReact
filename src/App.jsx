@@ -16,6 +16,9 @@ export default function App() {
         <BrowserRouter>
             <Header />
             <main>
+                <figure>
+                    <img className="coat-of-arms" src={`cv-portal-react/images/MauricioCoatOfArmsTextTop.png`} alt="Coat of arms" />
+                </figure>
                 <ElitePopup />
                 <Routes>
                     <Route path={"/"} element={<Home />}/>
