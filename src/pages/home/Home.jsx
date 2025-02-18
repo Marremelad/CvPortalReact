@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <>
             <figure>
-                <img className="coat-of-arms" src="../../../public/images/MauricioCoatOfArmsTextTop.png" alt="Coat of arms" />
+                <img className="coat-of-arms" src={`${process.env.PUBLIC_URL}/images/MauricioCoatOfArmsTextTop.png`} alt="Coat of arms" />
             </figure>
 
             <div className="title-container">
