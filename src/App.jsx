@@ -1,4 +1,5 @@
 import "./style.css"
+import image from "assets/images/"
 import {HashRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/home/Home.jsx"
 import About from "./pages/about/About.jsx"
