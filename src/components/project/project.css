@@ -12,6 +12,17 @@
     margin-bottom: 10rem;
 }
 
+.project-image-container {
+    display: flex;
+    align-items: center;
+    border: 2rem solid #efefef;
+}
+
+.project-image {
+    width: 50em;
+    object-fit: contain;
+}
+
 .project-info-container {
     width: 30rem;
 }
