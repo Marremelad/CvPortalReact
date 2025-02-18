@@ -1,5 +1,6 @@
 import "./home.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 import parse from "html-react-parser";
 import data from "../../assets/json/techStack.json";
 import ModalPopup from "../../components/modalPopups/ModalPopup.jsx";
@@ -8,9 +9,7 @@ export default function Home() {
     const [removeTechStackButton, setRemoveTechStackButton] = useState(false)
     const [openStates, setOpenStates] = useState(data.map(() => false))
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    useScrollToTop()
 
     const toggleOpen = (index) => {
         setOpenStates(prevStates => {

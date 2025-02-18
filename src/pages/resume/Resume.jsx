@@ -1,10 +1,8 @@
 import "./resume.css"
-import { useEffect } from "react"
+import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 
 export default function Resume() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    useScrollToTop()
 
     return (
         <>

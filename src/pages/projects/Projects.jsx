@@ -1,11 +1,9 @@
 import "./projects.css"
-import { useEffect } from "react";
+import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 import Project from "../../components/project/Project.jsx";
 
 export default function Projects() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    useScrollToTop()
 
     return (
         <>

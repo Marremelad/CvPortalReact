@@ -1,12 +1,11 @@
 import "./about.css"
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 
 export default function About() {
     const [removeElements, setRemoveElements] = useState(false);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    useScrollToTop()
 
     return (
         <>
