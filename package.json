@@ -1,14 +1,14 @@
 {
-  "homepage": "http://marremelad.github.io/cv-portal-react",
+  "homepage": "https://marremelad.github.io/cv-portal-react",
   "name": "cv-portal-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
