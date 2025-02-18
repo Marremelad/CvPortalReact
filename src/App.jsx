@@ -17,7 +17,7 @@ export default function App() {
             <Header />
             <main>
                 <figure>
-                    <img className="coat-of-arms" src={`/cv-portal-react/images/MauricioCoatOfArmsTextTop.png`} alt="Coat of arms" />
+                    <img className="coat-of-arms" src={`/cv-portal-react/public/images/MauricioCoatOfArmsTextTop.png`} alt="Coat of arms" />
                 </figure>
                 <ElitePopup />
                 <Routes>
