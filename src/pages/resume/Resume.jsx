@@ -16,7 +16,7 @@ export default function Resume() {
 
             <section className="personal-information-container">
                 <figure className="cv-picture-container">
-                    <img className="cv-picture" src={`/cv-portal-react/public/images/CvPicture.jpg`} alt="Portrait picture" />
+                    <img className="cv-picture" src={`${process.env.PUBLIC_URL}/images/CvPicture.jpg`} alt="Portrait picture" />
                 </figure>
 
                 <article className="personal-information">
