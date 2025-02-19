@@ -1,8 +1,8 @@
-import "./contact.css"
+import "./contact.css";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 
 export default function Contact() {
-    useScrollToTop()
+    useScrollToTop();
 
     return (
         <>
