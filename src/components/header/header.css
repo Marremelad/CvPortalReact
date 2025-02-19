@@ -1,6 +1,4 @@
-﻿/*---------- Hamburger Menu ----------*/
-
-.hamburger-menu {
+﻿.hamburger-menu {
     transition: opacity 0.5s;
     cursor: pointer;
 }
@@ -15,9 +13,6 @@
 .hamburger-menu:hover {
     opacity: 0.5;
 }
-
-
-/*---------- Sidebar  ----------*/
 
 .sidebar {
     display: flex;
