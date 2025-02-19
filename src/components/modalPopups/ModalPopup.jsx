@@ -1,4 +1,4 @@
-﻿import "./modalPopup.css"
+﻿import "./modalPopup.css";
 import Shade from "../shade/Shade.jsx";
 
 export default function ModalPopup({ data, open, setOpen, customClass = "" }) {
