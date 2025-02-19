@@ -1,15 +1,15 @@
-import "./about.css"
-import image1 from "../../assets/images/MilitaryExercise1.jpg"
-import image2 from "../../assets/images/HorseRide.jpg"
-import image3 from "../../assets/images/SwedishCoatOfArms.jpg"
-import image4 from "../../assets/images/MilitaryExercise2.jpg"
+import "./about.css";
+import image1 from "../../assets/images/MilitaryExercise1.jpg";
+import image2 from "../../assets/images/HorseRide.jpg";
+import image3 from "../../assets/images/SwedishCoatOfArms.jpg";
+import image4 from "../../assets/images/MilitaryExercise2.jpg";
 import { useState } from "react";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 
 export default function About() {
     const [removeElements, setRemoveElements] = useState(false);
 
-    useScrollToTop()
+    useScrollToTop();
 
     return (
         <>
@@ -61,7 +61,7 @@ export default function About() {
                 </article>
 
                 <figure>
-                    <img src={`${image3}`} alt="Swedish coat of arms.       " />
+                    <img src={`${image3}`} alt="Swedish coat of arms." />
                 </figure>
 
                 <article>
