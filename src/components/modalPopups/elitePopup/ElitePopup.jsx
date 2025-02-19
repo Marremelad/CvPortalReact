@@ -1,5 +1,5 @@
-﻿import "../modalPopup.css"
-import "./elitePopup.css"
+﻿import "../modalPopup.css";
+import "./elitePopup.css";
 import { useState, useEffect } from "react";
 import Shade from "../../shade/Shade.jsx";
 export default function ElitePopup() {
