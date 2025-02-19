@@ -1,11 +1,11 @@
-﻿import "./project.css"
+﻿import "./project.css";
 import { useState, useEffect } from "react";
 import { ClimbingBoxLoader } from "react-spinners";
 import ModalPopup from "../modalPopups/ModalPopup.jsx";
 
 export default function Project() {
     const [data, setData] = useState([])
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
     const [openStates, setOpenStates] = useState(data.map(() => false));
 
     useEffect(() => {
@@ -13,8 +13,8 @@ export default function Project() {
             .then(response => response.json())
             .then(data => {
                 setTimeout(() => {
-                    { setData(data); console.log(data) }
-                    setLoading(false)
+                    { setData(data); console.log(data); }
+                    setLoading(false);
                 }, 1000)
             })
             .catch(error => console.log(`Something went wrong!: ${error}`))
