@@ -6,10 +6,10 @@ import data from "../../assets/json/techStack.json";
 import ModalPopup from "../../components/modalPopups/ModalPopup.jsx";
 
 export default function Home() {
-    const [removeTechStackButton, setRemoveTechStackButton] = useState(false)
-    const [openStates, setOpenStates] = useState(data.map(() => false))
+    const [removeTechStackButton, setRemoveTechStackButton] = useState(false);
+    const [openStates, setOpenStates] = useState(data.map(() => false));
 
-    useScrollToTop()
+    useScrollToTop();
 
     const toggleOpen = (index) => {
         setOpenStates(prevStates => {
