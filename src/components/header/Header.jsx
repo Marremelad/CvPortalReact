@@ -1,14 +1,14 @@
-import "./header.css"
-import {NavLink, useLocation, useParams} from "react-router-dom"
+import "./header.css";
+import {NavLink, useLocation} from "react-router-dom";
 import { useState, useEffect } from "react";
 import Shade from "../shade/Shade.jsx";
 
 export default function Header() {
-    const [open, setOpen] = useState(false)
-    const url = useLocation()
+    const [open, setOpen] = useState(false);
+    const url = useLocation();
 
     useEffect(() => {
-        setOpen(false)
+        setOpen(false);
     }, [url]);
 
     return (

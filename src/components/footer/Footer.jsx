@@ -1,4 +1,4 @@
-﻿import "./footer.css"
+﻿import "./footer.css";
 export default function Footer() {
     const body = document.querySelector("body");
     const audio = new Audio("https://github.com/Marremelad/AssetsAndImages/raw/main/DIF-Sound.mp3");
