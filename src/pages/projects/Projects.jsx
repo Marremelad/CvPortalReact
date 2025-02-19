@@ -1,9 +1,9 @@
-import "./projects.css"
+import "./projects.css";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 import Project from "../../components/project/Project.jsx";
 
 export default function Projects() {
-    useScrollToTop()
+    useScrollToTop();
 
     return (
         <>
