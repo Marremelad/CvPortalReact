@@ -1,11 +1,11 @@
-import "./style.css"
-import image from "/src/assets/images/MauricioCoatOfArmsTextTop.png"
-import {HashRouter, Routes, Route} from "react-router-dom"
-import Home from "./pages/home/Home.jsx"
-import About from "./pages/about/About.jsx"
-import Projects from "./pages/projects/Projects.jsx"
-import Resume from "./pages/resume/Resume.jsx"
-import Contact from "./pages/contact/Contact.jsx"
+import "./style.css";
+import image from "/src/assets/images/MauricioCoatOfArmsTextTop.png";
+import {HashRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/home/Home.jsx";
+import About from "./pages/about/About.jsx";
+import Projects from "./pages/projects/Projects.jsx";
+import Resume from "./pages/resume/Resume.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 import Header from "./components/header/Header.jsx";
 import ElitePopup from "./components/modalPopups/elitePopup/ElitePopup.jsx";
 import Footer from "./components/footer/Footer.jsx";
