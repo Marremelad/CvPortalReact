@@ -1,9 +1,9 @@
-import "./resume.css"
-import image from "../../assets/images/CvPicture.jpg"
+import "./resume.css";
+import image from "../../assets/images/CvPicture.jpg";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 
 export default function Resume() {
-    useScrollToTop()
+    useScrollToTop();
 
     return (
         <>
