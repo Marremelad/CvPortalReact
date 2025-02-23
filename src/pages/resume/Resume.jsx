@@ -4,6 +4,7 @@ import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 import Employment from "../../components/resume/Employment.jsx";
 import References from "../../components/resume/References.jsx";
 import Education from "../../components/resume/Education.jsx";
+import Language from "../../components/resume/Language.jsx";
 
 export default function Resume() {
     useScrollToTop();
@@ -61,56 +62,7 @@ export default function Resume() {
                     <h2>Language skills</h2>
 
                     <div className="cv-information-container">
-                        <article>
-                            <p className="date">
-                                Portuguese
-                            </p>
-
-                            <p className="role">
-                                Fluent in speech and writing
-                            </p>
-
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                Swedish
-                            </p>
-
-                            <p className="role">
-                                Fluent in speech and writing
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                English
-                            </p>
-
-                            <p className="role">
-                                Fluent in speech and writing
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                Spanish
-                            </p>
-
-                            <p className="role">
-                                Good comprehension. Basic speaking and writing skills
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                French
-                            </p>
-
-                            <p className="role">
-                                Basic speaking, writing, and comprehension skills
-                            </p>
-                        </article>
+                        <Language />
                     </div>
                 </section>
             </div>
