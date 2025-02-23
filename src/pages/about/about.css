@@ -92,7 +92,7 @@ article:has(.show-contact-icons) {
         grid-template-columns: 1fr;
     }
 
-    /*.about-information-container article p {*/
-    /*    font-size: 1.3rem;*/
-    /*}*/
+    .about-information-container article p {
+        font-size: 1.2rem;
+    }
 }
