@@ -15,7 +15,7 @@ export default function Project() {
                 setTimeout(() => {
                     { setData(data); console.log(data); }
                     setLoading(false);
-                }, 1000)
+                }, 7000)
             })
             .catch(error => console.log(`Something went wrong!: ${error}`))
     }, []);
