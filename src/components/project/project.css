@@ -1,9 +1,4 @@
-﻿.loading-animation {
-    display: block;
-    color: white;
-}
-
-.project {
+﻿.project {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

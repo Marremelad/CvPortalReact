@@ -7,6 +7,7 @@ export default function Project() {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true);
     const [openStates, setOpenStates] = useState(data.map(() => false));
+    const body = document.querySelector("body");
 
     useEffect(() => {
         fetch("https://api.github.com/users/Marremelad/repos")
@@ -25,7 +26,7 @@ export default function Project() {
             <>
                 <article className="project">
                     <ClimbingBoxLoader
-                        color="#efefef"
+                        color={body.classList.contains("the-best-team-in-the-world") ? "#030f28" : "#efefef"}
                         size={30}
                     />
                 </article>
