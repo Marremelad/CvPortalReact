@@ -1,6 +1,6 @@
 ﻿import data from "../../assets/json/resume/references.json"
 
-export default function References() {
+export default function Reference() {
     return (
         <>
             {data.map((reference, index) => (

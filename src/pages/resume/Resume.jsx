@@ -2,7 +2,7 @@ import "./resume.css";
 import image from "../../assets/images/CvPicture.jpg";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 import Employment from "../../components/resume/Employment.jsx";
-import References from "../../components/resume/References.jsx";
+import Reference from "../../components/resume/Reference.jsx";
 import Education from "../../components/resume/Education.jsx";
 import Language from "../../components/resume/Language.jsx";
 
@@ -44,7 +44,7 @@ export default function Resume() {
                     <h2>References</h2>
 
                     <div className="cv-information-container">
-                        <References />
+                        <Reference />
                     </div>
                 </section>
             </div>
