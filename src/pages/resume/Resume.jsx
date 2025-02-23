@@ -2,6 +2,7 @@ import "./resume.css";
 import image from "../../assets/images/CvPicture.jpg";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 import Employment from "../../components/resume/Employment.jsx";
+import References from "../../components/resume/References.jsx";
 
 export default function Resume() {
     useScrollToTop();
@@ -41,59 +42,7 @@ export default function Resume() {
                     <h2>References</h2>
 
                     <div className="cv-information-container">
-                        <article>
-                            <p className="reference-name">
-                                Fredrik Liljecrantz
-                            </p>
-
-                            <p className="reference-role">
-                                Football coach
-                            </p>
-
-                            <p className="reference-employer">
-                                Enskede IK
-                            </p>
-
-                            <p className="reference-phone-number">
-                                +46 702 69 66 99
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="reference-name">
-                                Oscar Hennius
-                            </p>
-
-                            <p className="reference-role">
-                                Security manager
-                            </p>
-
-                            <p className="reference-employer">
-                                Securitas AB
-                            </p>
-
-                            <p className="reference-phone-number">
-                                +46 708 80 10 22
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="reference-name">
-                                Oscar Hovstadius
-                            </p>
-
-                            <p className="reference-role">
-                                Systems Engineer
-                            </p>
-
-                            <p className="reference-employer">
-                                Swedish Armed Forces
-                            </p>
-
-                            <p className="reference-phone-number">
-                                +46 765 76 52 85
-                            </p>
-                        </article>
+                        <References />
                     </div>
                 </section>
             </div>

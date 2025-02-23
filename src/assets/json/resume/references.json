@@ -1,0 +1,22 @@
+﻿[
+  {
+    "name" : "Fredrik Liljecrantz",
+    "role" : "Football coach",
+    "employer" : "Enskede IK",
+    "phoneNumber" : "+46 702 69 66 99"
+  },
+
+  {
+    "name" : "Oscar Hennius",
+    "role" : "Security Manager",
+    "employer" : "Securitas AB",
+    "phoneNumber" : "+46 708 80 10 22"
+  },
+
+  {
+    "name" : "Oscar Hovstadius",
+    "role" : "Systems Engineer",
+    "employer" : "Swedish Armed Forces",
+    "phoneNumber" : "+46 765 76 52 85"
+  }
+]
