@@ -1,6 +1,7 @@
 import "./resume.css";
 import image from "../../assets/images/CvPicture.jpg";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
+import Employment from "../../components/resume/Employment.jsx";
 
 export default function Resume() {
     useScrollToTop();
@@ -32,76 +33,7 @@ export default function Resume() {
                     <h2>Employment<br />and<br />Assignments</h2>
 
                     <div className="cv-information-container">
-                        <article>
-                            <p className="date">
-                                2023.04 - Ongoing
-                            </p>
-
-                            <p className="role">
-                                Football coach
-                            </p>
-
-                            <p className="employer-and-location">
-                                Enskede IK
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                2022.07 - 2024.10
-                            </p>
-
-                            <p className="role">
-                                Armed Security
-                            </p>
-
-                            <p className="employer-and-location">
-                                Securitas AB
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                2021.11- 2021-12
-                            </p>
-
-                            <p className="role">
-                                Tank Gunner
-                            </p>
-
-                            <p className="employer-and-location">
-                                Wartofta Kompani, P4, Skaraborgs
-                                regemente
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                2019.06 - 2021.10
-                            </p>
-
-                            <p className="role">
-                                Mechanized infantry soldier
-                            </p>
-
-                            <p className="employer-and-location">
-                                Roma Kompani, P18, Gotlands regemente
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                2015.03 - 2016.04
-                            </p>
-
-                            <p className="role">
-                                Stage and Sound Manager
-                            </p>
-
-                            <p className="employer-and-location">
-                                Hillsong Church, Stockholm
-                            </p>
-                        </article>
+                        <Employment />
                     </div>
                 </section>
 
