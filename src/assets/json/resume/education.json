@@ -1,0 +1,25 @@
+﻿[
+  {
+    "date" : "2024.09 - Ongoing",
+    "program" : ".NET Fullstack developer",
+    "educationalInstitution" : "Chas Academy"
+  },
+
+  {
+    "date" : "2022.06 - 2022.06",
+    "program" : "Security guard",
+    "educationalInstitution" : "Securitas AB"
+  },
+
+  {
+    "date" : "2018.07 - 2019.06",
+    "program" : "Military service, Tank Gunner",
+    "educationalInstitution" : "Wartofta Kompani, P4, Skaraborgs regemente"
+  },
+
+  {
+    "date" : "2014.08 - 2017.06",
+    "program" : "Natural Science Program",
+    "educationalInstitution" : "Jensen Gymnasium Södra"
+  }
+]

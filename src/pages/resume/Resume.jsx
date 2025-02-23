@@ -3,6 +3,7 @@ import image from "../../assets/images/CvPicture.jpg";
 import {useScrollToTop} from "../../hooks/useScrollToTop.js";
 import Employment from "../../components/resume/Employment.jsx";
 import References from "../../components/resume/References.jsx";
+import Education from "../../components/resume/Education.jsx";
 
 export default function Resume() {
     useScrollToTop();
@@ -52,62 +53,7 @@ export default function Resume() {
                     <h2>Education</h2>
 
                     <div className="cv-information-container">
-                        <article>
-                            <p className="date">
-                                2024.09 - Ongoing
-                            </p>
-
-                            <p className="program">
-                                .NET Fullstack developer
-                            </p>
-
-                            <p className="educational-institution">
-                                Chas Academy
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                2022.06 - 2022.06
-                            </p>
-
-                            <p className="program">
-                                Security guard
-                            </p>
-
-                            <p className="educational-institution">
-                                Securitas AB
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                2018.07 - 2019.06
-                            </p>
-
-                            <p className="program">
-                                Military service, Tank Gunner
-                            </p>
-
-                            <p className="educational-institution">
-                                Wartofta Kompani, P4,
-                                Skaraborgs regemente
-                            </p>
-                        </article>
-
-                        <article>
-                            <p className="date">
-                                2014.08 - 2017.06
-                            </p>
-
-                            <p className="program">
-                                Natural Science Program
-                            </p>
-
-                            <p className="educational-institution">
-                                Jensen Gymnasium Södra
-                            </p>
-                        </article>
+                        <Education />
                     </div>
                 </section>
 
