@@ -91,4 +91,8 @@ article:has(.show-contact-icons) {
     .about-information-container {
         grid-template-columns: 1fr;
     }
+
+    .about-information-container article p {
+        font-size: 1.3rem;
+    }
 }
